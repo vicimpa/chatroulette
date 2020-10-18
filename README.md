@@ -7,11 +7,25 @@
 - Не обращает внимание на присутствующие камеры
 - Убрана реклама и прочая лишняя информация
 
-# Сборка
+# Сборка под Windows
 
 ```
 > npm install
-> npm run build
+> npm run build-windows
+```
+
+# Сборка под Linux
+
+```
+> npm install
+> npm run build-linux
+```
+
+# Сборка под MacOS
+
+```
+> npm install
+> npm run build-mac
 ```
 
 # Запуск в режиме отладки
