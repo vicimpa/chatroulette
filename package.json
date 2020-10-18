@@ -1,0 +1,33 @@
+{
+  "name": "chatrullete-plus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "start": "electron . --dev",
+    "build": "electron-builder install-app-deps & electron-builder -w"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "~10.1.3",
+    "electron-builder": "~22.9.1"
+  },
+  "build": {
+    "appId": "com.spywords-grabber.ru",
+    "files": [
+      "dist/preload.js",
+      "main.js"
+    ],
+    "directories": {
+      "output": "./build"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "./icon.png",
+      "legalTrademarks": "WSV",
+      "publisherName": "Chatrullete"
+    }
+  }
+}
