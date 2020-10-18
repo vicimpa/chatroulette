@@ -1,24 +1,25 @@
-const {app, BrowserWindow, Menu} = require('electron')
-const { join  } = require('path')
+const { app, BrowserWindow, Menu } = require('electron')
+const { join } = require('path')
 
 let mainWindow = null
 
 const dev = process.argv.indexOf('--dev') != -1
 
-if(process.platform == 'linux') {
+if (process.platform == 'linux') {
   app.disableHardwareAcceleration()
   app.commandLine.appendSwitch("disable-software-rasterizer")
 }
 
-function initialize () {
+function initialize() {
   makeSingleInstance()
 
-  function createWindow () {
+  function createWindow() {
     const windowOptions = {
       width: 1080,
       minWidth: 680,
       title: 'Chatrullete (Plus)',
       height: 840,
+      icon: join(__dirname, '/icon.png'),
       webPreferences: {
         webSecurity: false,
         preload: join(__dirname, 'dist/preload.js')
@@ -28,7 +29,7 @@ function initialize () {
     mainWindow = new BrowserWindow(windowOptions)
     mainWindow.loadURL('https://videochatru.com/embed/')
 
-    if(dev)
+    if (dev)
       mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', () => {
@@ -53,7 +54,7 @@ function initialize () {
   })
 }
 
-function makeSingleInstance () {
+function makeSingleInstance() {
   if (process.mas) return
 
   app.requestSingleInstanceLock()
