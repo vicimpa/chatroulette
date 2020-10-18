@@ -17,7 +17,9 @@
     "electron-builder": "~22.9.1"
   },
   "build": {
-    "appId": "com.spywords-grabber.ru",
+    "appId": "com.wsv.chatrullete.plus",
+    "productName": "ChatRullete (Plus)",
+    "copyright": "WSV",
     "files": [
       "dist/preload.js",
       "main.js"
@@ -30,6 +32,14 @@
       "icon": "./icon.png",
       "legalTrademarks": "WSV",
       "publisherName": "Chatrullete"
+    },
+    "linux": {
+      "target": "appimage",
+      "maintainer": "WSV",
+      "icon": "./icon.png",
+      "category": "Network",
+      "description": "Chatrullete for Linux",
+      "executableName": "ChatRullete"
     }
   }
 }
