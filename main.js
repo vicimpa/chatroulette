@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require('electron')
+const { app, BrowserWindow } = require('electron')
 const { join } = require('path')
 
 let mainWindow = null

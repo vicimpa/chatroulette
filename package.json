@@ -22,7 +22,8 @@
     "copyright": "WSV",
     "files": [
       "dist/preload.js",
-      "main.js"
+      "main.js",
+      "icon.png"
     ],
     "directories": {
       "output": "./build"
