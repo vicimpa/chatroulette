@@ -34,7 +34,7 @@ let array = _0xf421.map((e, i) => _0x5747(i))
 const fs = require('fs')
 const regExp = /_?[a-z0-9]+\("0x([0-9a-f]+)"\)/i
 
-let datastring = fs.readFileSync('./test2.js', 'utf-8')
+let datastring = fs.readFileSync('./test_1.1.js', 'utf-8')
 
 /** @type {RegExpExecArray} */
 let execResult
@@ -44,6 +44,6 @@ while (execResult = regExp.exec(datastring)) {
     datastring = datastring.replace(find, `"${e('0x'+val)}"`)
 }
 
-fs.writeFileSync('./test3.js', datastring)
+fs.writeFileSync('./test_1.2.js', datastring)
 
-require('fs').writeFileSync('./out.json', JSON.stringify(array, null, 2))
+// require('fs').writeFileSync('./test_1.2.js', JSON.stringify(array, null, 2))
