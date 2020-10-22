@@ -2,7 +2,7 @@
 
 -----------------
 [![Build Info](https://img.shields.io/cirrus/github/vicimpa/chatroulette)](https://github.com/vicimpa/chatroullete)
-[![](https://img.shields.io/github/downloads/vicimpa/chatroulette/0.0.1/total)](https://github.com/vicimpa/chatrulette/releases/latest)
+[![Download](https://img.shields.io/github/downloads/vicimpa/chatroulette/0.0.1/total)](https://github.com/vicimpa/chatroulette/releases)
 [![Npm version](https://img.shields.io/npm/v/chatroulette)](https://www.npmjs.com/package/chatroulette)
 [![Npm License](https://img.shields.io/npm/l/chatroulette)](https://www.npmjs.com/package/chatroulette)
 [![VK Link](https://img.shields.io/badge/social-vk-blue)](https://vk.com/vicimpa)
