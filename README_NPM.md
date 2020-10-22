@@ -1,5 +1,4 @@
 # Чат рулетка
-[![Чат рулетка](logo_min.png)](https://videochatru.com/)
 
 -----------------
 [![Build Info](https://img.shields.io/cirrus/github/vicimpa/chatroulette)](https://github.com/vicimpa/chatroullete)
@@ -51,11 +50,3 @@
 > npm i -g chatroulette
 > chatroulette
 ```
-
-# Скриншоты
-
->
-> ![screen](screen/img1.png)
->
-> ![screen](screen/img2.png)
-> 

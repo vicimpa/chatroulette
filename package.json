@@ -1,10 +1,22 @@
 {
   "name": "chatroulette",
-  "version": "0.0.1",
+  "version": "0.0.1-2",
   "description": "",
   "main": "main.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "desktop",
+    "client",
+    "chatroulette",
+    "chat",
+    "roulette",
+    "droidcam",
+    "snap",
+    "camera",
+    "fake",
+    "camera",
+    "cam"
+  ],
+  "author": "PromiSe####",
   "scripts": {
     "start": "electron .",
     "start-dev": "electron . --dev",
@@ -13,6 +25,7 @@
     "build-linux": "electron-builder install-app-deps & electron-builder -l",
     "build-mac": "electron-builder install-app-deps & electron-builder -m"
   },
+  "readme": "README_NPM.md",
   "bin": {
     "chatroulette": "bin/chatroulette.js"
   },
