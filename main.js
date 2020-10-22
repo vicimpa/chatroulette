@@ -28,6 +28,7 @@ function initialize() {
 
     mainWindow = new BrowserWindow(windowOptions)
     mainWindow.loadURL('https://videochatru.com/embed/')
+    mainWindow.setMenu(null)
 
     if (dev)
       mainWindow.webContents.openDevTools()
