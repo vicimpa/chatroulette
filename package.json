@@ -1,24 +1,31 @@
 {
-  "name": "chatrullete-plus",
+  "name": "chatroulette",
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
   "keywords": [],
   "author": "",
   "scripts": {
-    "start": "electron . --dev",
+    "start": "electron .",
+    "start-dev": "electron . --dev",
+    "build": "electron-builder install-app-deps & electron-builder -wlm",
     "build-windows": "electron-builder install-app-deps & electron-builder -w",
     "build-linux": "electron-builder install-app-deps & electron-builder -l",
     "build-mac": "electron-builder install-app-deps & electron-builder -m"
   },
+  "bin": {
+    "chatroulette": "bin/chatroulette.js"
+  },
   "license": "ISC",
+  "dependencies": {
+    "electron": "~10.1.3"
+  },
   "devDependencies": {
-    "electron": "~10.1.3",
     "electron-builder": "~22.9.1"
   },
   "build": {
-    "appId": "com.wsv.chatrullete.plus",
-    "productName": "ChatRullete (Plus)",
+    "appId": "com.wsv.chatroulette",
+    "productName": "ChatRoulette",
     "copyright": "WSV",
     "files": [
       "dist/preload.js",
@@ -32,15 +39,15 @@
       "target": "portable",
       "icon": "./icon.png",
       "legalTrademarks": "WSV",
-      "publisherName": "Chatrullete"
+      "publisherName": "ChatRoulette"
     },
     "linux": {
       "target": "appimage",
       "maintainer": "WSV",
       "icon": "./icon.png",
       "category": "Network",
-      "description": "Chatrullete for Linux",
-      "executableName": "ChatRullete"
+      "description": "ChatRoulette for Linux",
+      "executableName": "ChatRoulette"
     }
   }
 }

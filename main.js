@@ -17,7 +17,7 @@ function initialize() {
     const windowOptions = {
       width: 1080,
       minWidth: 680,
-      title: 'Chatrullete (Plus)',
+      title: 'ChatRoulette',
       height: 840,
       icon: join(__dirname, '/icon.png'),
       webPreferences: {
