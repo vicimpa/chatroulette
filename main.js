@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, systemPreferences, Menu } = require('electron')
 const { join } = require('path')
 
 let mainWindow = null
@@ -10,10 +10,12 @@ if (process.platform == 'linux') {
   app.commandLine.appendSwitch("disable-software-rasterizer")
 }
 
-function initialize() {
+async function initialize() {
   makeSingleInstance()
 
-  function createWindow() {
+  async function createWindow() {
+    Menu.setApplicationMenu(new Menu())
+
     const windowOptions = {
       width: 1080,
       minWidth: 680,
@@ -28,10 +30,26 @@ function initialize() {
 
     mainWindow = new BrowserWindow(windowOptions)
     mainWindow.loadURL('https://videochatru.com/embed/')
-    mainWindow.setMenu(null)
 
     if (dev)
       mainWindow.webContents.openDevTools()
+
+    try {
+      if (process.platform == 'darwin' || process.platform == 'win32') {
+        const m = systemPreferences.getMediaAccessStatus('microphone')
+        const c = systemPreferences.getMediaAccessStatus('camera')
+        
+        if(m == 'not-determined')
+          await systemPreferences.askForMediaAccess('microphone')
+            .catch(console.log)
+    
+        if(c == 'not-determined')
+          await systemPreferences.askForMediaAccess('camera')
+            .catch(console.log)
+      }
+    }catch(e) {
+      console.log(e)
+    }
 
     mainWindow.on('closed', () => {
       mainWindow = null
@@ -66,4 +84,4 @@ function makeSingleInstance() {
   })
 }
 
-initialize()
+initialize().catch(console.log)
