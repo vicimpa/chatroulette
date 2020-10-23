@@ -3,7 +3,7 @@
 
 -----------------
 [![Build Info](https://img.shields.io/cirrus/github/vicimpa/chatroulette)](https://github.com/vicimpa/chatroullete)
-[![Download](https://img.shields.io/github/downloads/vicimpa/chatroulette/0.0.1/total)](https://github.com/vicimpa/chatroulette/releases)
+[![Download](https://img.shields.io/github/downloads/vicimpa/chatroulette/0.0.2/total)](https://github.com/vicimpa/chatroulette/releases)
 [![Npm version](https://img.shields.io/npm/v/chatroulette)](https://www.npmjs.com/package/chatroulette)
 [![Npm License](https://img.shields.io/npm/l/chatroulette)](https://www.npmjs.com/package/chatroulette)
 [![VK Link](https://img.shields.io/badge/social-vk-blue)](https://vk.com/vicimpa)
@@ -15,6 +15,7 @@
 - Работает независимо от операционной системы
 - Не обращает внимание на присутствующие камеры
 - Убрана реклама и прочая лишняя информация
+- Есть возможность выбирать вывод на аудиоустройства
 
 Загрузить можно [тут](https://github.com/vicimpa/chatrulette/releases/latest)
 
