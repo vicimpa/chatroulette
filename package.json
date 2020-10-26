@@ -1,8 +1,12 @@
 {
   "name": "chatroulette",
-  "version": "0.0.2-1",
+  "version": "0.0.2-3",
   "description": "",
   "main": "main.js",
+  "repository": {
+    "type": "github.com",
+    "url": "https://github.com/vicimpa/chatroulette"
+  },
   "keywords": [
     "desktop",
     "client",
@@ -25,7 +29,7 @@
     "build-linux": "electron-builder install-app-deps & electron-builder -l",
     "build-mac": "electron-builder install-app-deps & electron-builder -m"
   },
-  "readme": "README_NPM.md",
+  "readme": "./README_NPM.md",
   "bin": {
     "chatroulette": "bin/chatroulette.js"
   },
