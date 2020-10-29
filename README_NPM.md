@@ -16,7 +16,7 @@
 - Убрана реклама и прочая лишняя информация
 - Есть возможность выбирать вывод на аудиоустройства
 
-Загрузить можно [тут](https://github.com/vicimpa/chatrulette/releases/latest)
+Загрузить можно [тут](https://github.com/vicimpa/chatroulette/releases)
 
 # Сборка под Windows
 
