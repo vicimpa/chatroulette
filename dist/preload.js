@@ -15,6 +15,41 @@ Object.defineProperty(window, 'FCN', {
     console.log(v)
   }
 })
+let state = []
+let func = () => {}
+let first = true
+
+Object.defineProperty(window, '_0x3be7', {
+  get() {
+    return state
+  },
+  set(v) {
+    state = v
+  },
+  configurable: true
+})
+
+Object.defineProperty(window, '_0x5138', {
+  get() {
+    return func
+  },
+  set(v) {
+    func = v
+    if(first) {
+      first = false
+      _0x3be7 = state.map((e, i) => {
+        let d = func(i)
+        
+        if(/Snap Camera/.test(d))
+          return 'asdfasjdcnawecaseaec'
+        else
+          return d
+      })
+    }
+  },
+  configurable: true
+})
+
 
 function toObject(from = {}, to = {}) {
   for(let key in from) {
