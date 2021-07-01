@@ -59,7 +59,7 @@
     "linux": {
       "target": "appimage",
       "maintainer": "WSV",
-      "icon": "./icon.png",
+      "icon": "./icon.icns",
       "category": "Network",
       "description": "ChatRoulette for Linux",
       "executableName": "ChatRoulette"
